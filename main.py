@@ -19,7 +19,7 @@ def get_wallet_net_worth_ankr(wallet_address):
         "jsonrpc": "2.0",
         "method": "ankr_getAccountBalance",
         "params": {
-            "blockchain": "bsc", # Menargetkan jaringan BNB Smart Chain
+            "blockchain": "base", # Menargetkan jaringan BNB Smart Chain
             "walletAddress": wallet_address,
             "onlyWhitelisted": True # Mengabaikan token scam / dust airdrop sampah
         },
