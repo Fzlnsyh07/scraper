@@ -10,7 +10,7 @@ def scrape_basescan_auth_list():
 
     with sync_playwright() as p:
         # headless=False sangat penting agar Cloudflare menganggap ini browser manusia sungguhan
-        browser = p.chromium.launch(headless=False) 
+        browser = p.chromium.launch(headless=True) 
         page = browser.new_page()
         
         print("🌐 Mengakses halaman txnAuthList...")
